@@ -29,50 +29,50 @@
             <ul class="flex-outer">
                 <li>
                     <label for="first-name">First Name</label>
-                    <input type="text" id="first-name" placeholder="Enter your first name here" onfocus="of()" onblur="ob()" name='x'>
+                    <input type="text" id="first-name" placeholder="Enter your first name here" onfocus="of()" onblur="obname()" name='x'>
 
                 </li>
                 <li>
                     <label for="last-name">Last Name</label>
-                    <input type="text" id="last-name" placeholder="Enter your last name here" onfocus="of()" onblur="ob()" name='y'>
+                    <input type="text" id="last-name" placeholder="Enter your last name here" onfocus="of()" onblur="oblname()" name='y'>
                 </li>
                 <li>
                     <label for="email">Email</label>
-                    <input type="text" id="email" placeholder="Enter your email here" onfocus="of()" onblur="ob()" name='w'>
+                    <input type="text" id="email" placeholder="Enter your email here" onfocus="of()" onblur="obemail()" name='w'>
                 </li>
                 <li>
                     <label for="password">Password</label>
-                    <input type="password" id="password" placeholder="Enter your password here" onfocus="of()" onblur="ob()" name='t'>
+                    <input type="password" id="password" placeholder="Enter your password here" onfocus="of()" onblur="obpasw()" name='t'>
                 </li>
                 <li>
                     <label for="phone">Phone</label>
-                    <input type="text" id="phone" placeholder="Enter your phone here" onfocus="of()" onblur="ob()" >
+                    <input type="text" id="phone" placeholder="Enter your phone here" onfocus="of()" >
                 </li>
                 <li>
                     <p>Vehicle</p>
                     <ul class="vehicle">
                         <li>
-                            <input type="checkbox" id="car" name="car" value="car" onfocus="of()" onblur="ob()">
+                            <input type="checkbox" id="car" name="car" value="car" onfocus="of()">
                             <label for="car">I have a Car</label>
                         </li>
                         <li>
-                            <input type="checkbox" id="bike" name="bike" value="bike" onfocus="of()" onblur="ob()">
+                            <input type="checkbox" id="bike" name="bike" value="bike" onfocus="of()" >
                             <label for="bike">I have a Bike</label>
                         </li>
                         <li>
-                            <input type="checkbox" id="motorcycle" name="motorcycle" value="motorcycle" onfocus="of()" onblur="ob()">
+                            <input type="checkbox" id="motorcycle" name="motorcycle" value="motorcycle" onfocus="of()">
                             <label for="motorcycle">I have a Motorcycle</label>
                         </li>
                     </ul>
                 </li>
                 <li>
                     <label for="comments">Comments</label>
-                    <textarea rows="6" id="comments" placeholder="Enter your comments here" onfocus="of()" onblur="ob()" name='z'></textarea>
+                    <textarea rows="6" id="comments" placeholder="Enter your comments here" onfocus="of()" onblur="obcomments()" name='z'></textarea>
                 </li>
                 <li class="error-list hidden">
                     <label>Error</label>
                     <ul>
-                        <li>Please, inser your first name</li>
+                        
                     </ul>
                 </li>
                 <li class="error-list hidden">
@@ -85,24 +85,31 @@
                  <li class="error-list hidden">
                         <label>Error</label>
                         <ul>
-                            <li>Please,insert your comments</li>
+                            <li>Please,insert a valid email form</li>
                         </ul>
                     </li>
                     <li>
                         <li class="error-list hidden">
                             <label>Error</label>
                             <ul>
-                                <li>Please,insert a valid email form</li>
+                                <li>Please build your password with at least 1 uppercase 1 lowercase and 1 digit and 6 characters minimum</li>
                             </ul>
                         </li>
                         <li>
                             <li class="error-list hidden">
                                 <label>Error</label>
                                 <ul>
-                                    <li>Please build your password with at least 1 uppercase 1 lowercase and 1 digit and 6 characters minimum </li>
+                                    <li>Please insert comments </li>
                                 </ul>
                             </li>
                             <li>
+                                <li class="error-list hidden">
+                                    <label>Error</label>
+                                    <ul>
+                                        <li>Please insert at least 50 characters</li>
+                                    </ul>
+                                </li>
+                                <li>
 
                     <button type="submit">Submit</button>
                 </li>
