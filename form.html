@@ -5,6 +5,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <title>Form validation</title>
     <link rel="stylesheet" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <section id="exercise">
@@ -52,8 +54,8 @@
                     <p>Vehicle</p>
                     <ul class="vehicle">
                         <li>
-                            <input type="checkbox" id="car" name="car" value="car" onfocus="of()">
-                            <label for="car">I have a Car</label>
+                            <input type="checkbox" id="car" name="car" value="car" onfocus="of()" onblur="dh()">
+                            <label for="car">CAR</label>
                         </li>
                         <li>
                             <input type="checkbox" id="bike" name="bike" value="bike" onfocus="of()" >
@@ -71,51 +73,102 @@
                 </li>
                 <li class="error-list hidden">
                     <label>Error</label>
-                    <ul>
-                        
+                    <ul>                        
                     </ul>
-                </li>
-                <li class="error-list hidden">
-                    <label>Error</label>
-                    <ul>
-                        <li>Please,insert your last name</li>
-                    </ul>
-                </li>
-                <li>
-                 <li class="error-list hidden">
-                        <label>Error</label>
-                        <ul>
-                            <li>Please,insert a valid email form</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <li class="error-list hidden">
-                            <label>Error</label>
-                            <ul>
-                                <li>Please build your password with at least 1 uppercase 1 lowercase and 1 digit and 6 characters minimum</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <li class="error-list hidden">
-                                <label>Error</label>
-                                <ul>
-                                    <li>Please insert comments </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <li class="error-list hidden">
-                                    <label>Error</label>
-                                    <ul>
-                                        <li>Please insert at least 50 characters</li>
-                                    </ul>
-                                </li>
-                                <li>
-
+                    
                     <button type="submit">Submit</button>
                 </li>
             </ul>
         </fieldset>
     </form>
+    
+    <form style=background-color:#F5F5F5>
+    
+    <label>CAR</label><hr>
+        
+<label>Model</label>
+  <input type=checkbox>
+  </input>
+    <div class="navbar hidden">
+  <div class="dropdown">
+    <button class="dropbtn">Your car color! 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Grey</a>
+      <a href="#">Black</a>
+      <a href="#">White</a>
+      <a href="#">Caramel White</a>
+      <a href="#">Blue</a>
+    </div>
+  </div> 
+</div>
+    <label>Insert door´s number</label>
+  <input>
+  </input>
+</form>
+<div style=background-color:#F5F5F5>
+<label>BIKE</label><hr>       
+<label>Model</label>
+  <input>
+  </input>
+
+    <div class="navbar">
+  <div class="dropdown">
+    <button class="dropbtn">Your bike color! 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Yellow</a>
+      <a href="#">Black</a>
+      <a href="#">White</a>
+      <a href="#">Red</a>
+      <a href="#">Blue</a>
+    </div>
+  </div> 
+</div>
+   
+  <input type="checkbox">
+  <label>Nest</label></input>
+  <input type="checkbox">
+  <label>Bike seat</label></input>
+  <input type="checkbox">
+  <label>Special tires </label></input>
+    
+</form>
+    </div>
+    </div>                
+
+    <div style=background-color:#F5F5F5>
+<label>MOTORCYCLE</label> <hr>
+<label>Model</label>
+  <input>
+  </input>
+  
+    <div class="navbar">
+  <div class="dropdown">
+    <button class="dropbtn">Your motorcycle color! 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Grey</a>
+      <a href="#">Black</a>
+      <a href="#">White</a>
+      <a href="#">Caramel White</a>
+      <a href="#">Blue</a>
+    </div>
+  </div> 
+</div>
+  <input type="radio">
+  <label>City</label></input>
+  <input type="radio">
+  <label>Road</label></input>
+  <input type="radio">
+  <label>All Terrain</label></input>
+</form>
+    </div>
+    </div>       
+           
 </section>
 <script type="text/javascript" src="js/main.js"></script>
 </body>

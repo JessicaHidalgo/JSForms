@@ -22,7 +22,7 @@ function deleteli(id){
 
 }
 function obname (){
-    debugger
+    
     var fname=document.forms['register']['x'].value;
     if (fname==""){
         create("Please, insert your first name",'1')
@@ -80,3 +80,4 @@ function obcomments(){
         }
     
     }
+
